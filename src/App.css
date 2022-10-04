@@ -622,6 +622,14 @@ footer p{
     width: 100%;
     size: cover;
   }
+  .icons{
+  display:hidden;
+  }
+
+.icons button{
+  display:hidden;
+  }
+
 
   .login-container h2 {
     transform: translateX(-900px) translateY(100px);
@@ -1167,8 +1175,8 @@ footer p{
   background-color: white;
   position: absolute;
   width: 200px;
-  height: 60vh;
-  transform: translateY(-150px) translateX(-50px);
+  height: 55vh;
+  transform: translateY(-170px) translateX(-50px);
   padding-top: 30px;
   text-align: center;
   letter-spacing: 1px;
