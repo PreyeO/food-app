@@ -20,6 +20,7 @@ const Home = ({ data }) => {
       <span>
       <h1>Lillies</h1>
       </span>
+      <div className="hpme-container">
       <div className="hero">
         <div className="hero2">
           <p id='big-text'> Order <span style={{color:'#e2b887'}}>food</span> anytime,
@@ -67,6 +68,7 @@ const Home = ({ data }) => {
                 </form>
               </div>
           </div>
+      </div>
       </div>
       </div>
       </div>

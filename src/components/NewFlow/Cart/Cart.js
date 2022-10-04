@@ -28,6 +28,7 @@ const Cart = ({ meals, onRemove}) => {
     </div>
     <DashBoardModal />
     <div className="cart">
+      <div className='cart-container'>
       
         
           {meals.length > 0 ? (
@@ -79,6 +80,7 @@ const Cart = ({ meals, onRemove}) => {
           ) : (
             "Your cart is currently empty..."
           )}
+          </div>
         </div>
         </>
   );

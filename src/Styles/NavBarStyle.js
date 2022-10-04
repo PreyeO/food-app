@@ -9,6 +9,7 @@ export const StyledNavBar= styled.nav`
   justify-content: flex-end;
   padding-right: 40px;
   width: 100%;
+  
 ul{
   display: flex;
   flex-direction: row;
@@ -48,6 +49,11 @@ span{
   padding: 5px;
   transform:translateY(-6px);
 }
+nav{
+  position: fixed;
+  left:0;
+  bottom:0;
+ }
 @media screen and (max-width: 780px) {
 span{
   display:none;

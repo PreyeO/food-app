@@ -9,6 +9,11 @@
 
 /*landing page*/
 
+.home{
+  left: 0px;
+  top: 0px;
+}
+
 .home h1{
   transform:translateX(130px) translateY(-55px);
   color:white;
@@ -117,7 +122,6 @@ footer{
   background-color: black;
   transform:translateY(1800px);
   height:450px;
-  overflow: hidden;
 }
 
 .footer-container {
@@ -212,10 +216,15 @@ footer p {
 
 
 @media screen and (max-width:900px) {
+ 
   .home h1{
     transform:translateX(70px) translateY(-70px);
     font-size: 20px;
   }
+  .home-container{
+    overflow-x: hidden;
+  }
+  
 .foods1 img{
   transform: translateX(-895px) translateY(-90px);
   height:230px ;
@@ -362,8 +371,11 @@ footer p{
   transform: translateX(100px) translateY(-170px);
 }
 
+
 }
 @media screen and (min-width: 450px) and (max-width: 900px) {
+
+  
   .styling{
     transform: translateX(30px);
   }
@@ -458,7 +470,6 @@ footer p{
 .login {
   left: 0px;
   top: 0px;
-  background-color: white;
   overflow: hidden;
 }
 
@@ -596,6 +607,7 @@ footer p{
   background-color: transparent;
   outline: none;
   cursor: pointer;
+  position :fixed;
 }
 .login img{
   overflow: hidden;
@@ -648,6 +660,9 @@ footer p{
   }
   .icons{
     transform: translateX(290px)translateY(-315px)
+  }
+  .icons button{
+    position :fixed;
   }
 }
 @media screen and (min-width: 628px) and (max-width:992px){
@@ -945,6 +960,7 @@ footer p{
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-evenly;
+  overflow-x: hidden;
 
 }
 .card {
@@ -1151,7 +1167,7 @@ footer p{
   background-color: white;
   position: absolute;
   width: 200px;
-  height: 49vh;
+  height: 60vh;
   transform: translateY(-150px) translateX(-50px);
   padding-top: 30px;
   text-align: center;
@@ -1163,7 +1179,7 @@ footer p{
   padding-top: 20px;
 }
 .close-modal{
-  transform: translateY(-290px) translateX(70px);
+  transform: translateY(-420px) translateX(70px);
   color: red;
 }
  
@@ -1233,6 +1249,10 @@ footer p{
 @media screen and (max-width: 699px) {
   .cart {
     width: 90px;
+      
+  }
+  .carts{
+    overflow-x: hidden;
   }
   .items img{
     margin-bottom: 20px;
@@ -1243,16 +1263,16 @@ footer p{
   }
   
   .cart h1 {
-    font-size: 16px;
-    transform: translateY(30px) translateX(20px);
+    font-size: 15px;
+    transform: translateY(40px) translateX(230px);
   }
   .item-containers h2 {
     font-size: 15px;
-    transform: translateY(60px) translateX(55px);
+    transform: translateY(60px) translateX(45px);
   }
   .quantity {
     box-shadow: 5px whitesmoke;
-    transform: translateY(40px) translateX(190px);
+    transform: translateY(40px) translateX(170px);
     width: 180px;
     font-size: 12px;
     gap: 10px;
@@ -1322,6 +1342,7 @@ footer p{
     display: block;
     transform:  translateX(685px)translateY(-15px) ;
   }
+  
 }
 
 /*orders*/
@@ -1331,7 +1352,7 @@ footer p{
 
 @media screen and (max-width: 699px) {
   .orders h1 {
-    transform: translateY(25px) translateX(0px);
+    transform: translateY(25px) translateX(10px);
     font-size: 20px;
   }
   .orders span{
@@ -1347,7 +1368,9 @@ footer p{
   .order-style .items{
     margin-bottom: 50px;
   }
-
+  .orders{
+    overflow-x: hidden;
+  }
 }
 @media screen and (min-width: 530px) and (max-width:767px){
   .order-style{
@@ -1361,7 +1384,10 @@ footer p{
   }
   .orders span{
     display: block;
-    transform:  translateX(485px)translateY(-15px) ;
+    transform:  translateX(445px)translateY(-15px) ;
+  }
+  .orders{
+    overflow-x: hidden;
   }
   
 }
@@ -1427,13 +1453,17 @@ footer p{
   .checkout h1 {
     transform: translateX(140px) translateY(100px);
   }
+  
   .checks span{
     display: block;
     transform:  translateX(250px)translateY(20px) ;
   }
   .checkouts form {
     transform: translateX(-50px) translateY(150px);
+    
   }
+  
+  
   .checkouts input {
     width: 250px;
     margin-top: 20px;
