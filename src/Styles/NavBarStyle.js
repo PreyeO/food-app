@@ -13,6 +13,7 @@ export const StyledNavBar= styled.nav`
 ul{
   display: flex;
   flex-direction: row;
+  align-items:center;
   gap: 2rem;
   list-style: none;
 }
